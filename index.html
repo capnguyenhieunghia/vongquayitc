@@ -11,9 +11,137 @@
     <title>Vòng quay ITC</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
+<style>
+    .tt {
+        position: absolute;
+        bottom: 25%;
+        left: 10%;
+    }
+
+    .qr {
+        width: 150px;
+        height: 150px;
+    }
+
+    .qr img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maqr {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .ttd {
+        position: relative;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ttd .logo {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        height: 100%;
+    }
+
+    .logo img {
+        height: 90px;
+        width: 90px;
+    }
+
+    body .kl1 {
+        position: absolute;
+        top: 60%;
+        left: 1%;
+    }
+
+    body .kl2 {
+        position: absolute;
+        right: 3%;
+        bottom: 9%;
+    }
+
+    body .kl3 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    body .kl4 {
+        position: absolute;
+        top: 30%;
+        right: 12%;
+    }
+
+    body .kl5 {
+        position: absolute;
+        top: 3%;
+        right: 1%;
+    }
+
+    body .kl6 {
+        position: absolute;
+        left: 18%;
+        bottom: 53%;
+    }
+
+    body .kl7 {
+        position: absolute;
+        left: 1%;
+        top: 33%;
+    }
+
+    body .kl8 {
+        position: absolute;
+        right: 20%;
+        bottom: 23%;
+    }
+
+    .kl1,
+    .kl2,
+    .kl3,
+    .kl3,
+    .kl5,
+    .kl6,
+    .kl7,
+    .kl8,
+    img {
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+    }
+</style>
 
 <body>
-    <div class="logo"><img src="./image/logoitc.png" alt=""></div>
+    <div class="anhbg">
+        <div class="kl1"><img src="./image/kl1.gif" alt=""></div>
+        <div class="kl2"><img src="./image/kl2.png" alt=""></div>
+        <div class="kl3"><img src="./image/kl3.png" alt=""></div>
+        <div class="kl4"><img src="./image/kl4.png" alt=""></div>
+        <div class="kl5"><img src="./image/kl5.jpg" alt=""></div>
+        <div class="kl6"><img src="./image/kl6.png" alt=""></div>
+        <div class="kl7"><img src="./image/kl7.gif" alt=""></div>
+        <div class="kl8"><img src="./image/kl8.gif" alt=""></div>
+    </div>
+    <div class="ttd">
+        <div class="logo"><img src="./image/logoitc.png" alt=""></div>
+        <h2 style="text-align: center; margin: 15px 0px;">TRƯỜNG CAO ĐẲNG CÔNG NGHỆ THÔNG TIN TP. HỒ CHÍ MINH</h2>
+    </div>
+    <div class="tt">
+        <div class="maqr">
+            <div class="qr">
+                <h3 style="color: red;">Zalo 01</h3><img src="./image/zalo1.jpg" alt="">
+            </div>
+            <div class="qr">
+                <h3 style="color: red;">Zalo 02</h3><img src="./image/zalo2.jpg" alt="">
+            </div>
+        </div>
+    </div>
     <main>
         <section class="main">
             <span>
@@ -23,6 +151,13 @@
         </section>
         <h2 class="msg"></h2>
     </main>
+
+    <div class="ft" style="padding: 0 0 0 25px;">
+        <div class="ft">Địa chỉ: số 12 Trịnh Đình Thảo, Hòa Thạnh, Tân Phú, TP. HCM</div>
+        <div class="ft">Website: itc.edu.vn</div>
+        <div class="ft">SĐT: 093 886 1080 - 097 500 5356</div>
+        <div class="ft">Gmail: tuyensinh@itc.edu.vn</div>
+    </div>
     <script src="./main.js"></script>
 </body>
 
