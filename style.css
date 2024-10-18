@@ -168,7 +168,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         display: none;
     }
 }
