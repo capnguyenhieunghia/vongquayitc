@@ -13,6 +13,7 @@
         {
             text: 'I phone 13',
             percent: 10 / 100,
+            Image: 'image/kl1',
         },
         {
             text: 'Siêu xe',
