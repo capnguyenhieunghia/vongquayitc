@@ -8,18 +8,20 @@
     const btnWheel = $('.btn--wheel');
     const showMsg = $('.msg');
 
+    // Thêm âm thanh quay
+    const spinSound = new Audio('amthanhquay.mp3'); // Đảm bảo đường dẫn chính xác
+
     //=====< Danh sách phần thưởng >=====
     const listGift = [
         { text: 'Gấu bông ITC', chance: 0 },
-        { text: 'Quạt ITC', chance: 5 },      // 20%
-        { text: 'Bình nước ITC', chance: 1 },
-        { text: 'Balo ITC', chance: 0 },
-        { text: 'Chúc bạn may mắn lần sau', chance: 45 }, // 30%
+        { text: 'Quạt ITC', chance: 5 },
+        { text: 'Quay lại lần nữa', chance: 3 },
+        { text: 'Bình nước ITC', chance: 0 },
+        { text: 'Balo ITC', chance: 1 },
+        { text: 'Chúc bạn may mắn lần sau', chance: 45 },
         { text: 'Bút ITC', chance: 7 },
-        { text: 'Quay lại lần nữa', chance: 3 },  // 5%
-        { text: 'Quay lại lần nữa', chance: 39 }   // 5%
+        { text: 'Quay lại lần nữa', chance: 39 }
     ];
-
 
     const totalChance = 100;
     let cumulativeChance = 0;
@@ -49,6 +51,7 @@
     const start = () => {
         showMsg.innerHTML = '';
         isRotating = true;
+        spinSound.play(); // Phát âm thanh khi bắt đầu quay
         const gift = getGift();
         currentRotate += 360 * 10; // Tăng vòng quay
         rotateWheel(currentRotate, gift.index);
