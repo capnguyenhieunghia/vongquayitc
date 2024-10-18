@@ -271,16 +271,16 @@
             const listGift = [
                 { text: 'Gấu bông ITC', chance: 2 }, // 10%
                 { text: 'Quạt ITC', chance: 10 },      // 20%
-                { text: 'Bình nước ITC', chance: 5 },  // 10%
+                { text: 'Bình nước ITC', chance: 1 },  // 10%
                 { text: 'Balo ITC', chance: 0 },       // 10%
                 { text: 'Chúc bạn may mắn lần sau', chance: 40 }, // 30%
                 { text: 'Bút ITC', chance: 10 },        // 10%
                 { text: 'Quay lại lần nữa', chance: 3 },  // 5%
-                { text: 'Quay lại lần nữa', chance: 30 }   // 5%
+                { text: 'Quay lại lần nữa', chance: 34 }   // 5%
             ];
 
 
-            const totalChance = 100; 
+            const totalChance = 100;
             let cumulativeChance = 0;
             const cumulativeGifts = listGift.map(gift => {
                 cumulativeChance += gift.chance;
